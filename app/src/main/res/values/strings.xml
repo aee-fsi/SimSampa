@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Sim@Sampa</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_segunda_tela">Segunda Tela</string>
+    <string name="title_activity_tela_principal">Tela Principal</string>
+    <string name="title_activity_inicializacao">Inicializacao</string>
+    <string name="title_activity_lista_subprefeituras">Lista Subprefeituras</string>
+</resources>
