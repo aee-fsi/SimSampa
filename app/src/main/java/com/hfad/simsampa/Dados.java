@@ -11,11 +11,12 @@ public class Dados extends AppCompatActivity{
     String[] orçamentoSecretarias = {"749416037", "11096151037", "2248510385", "1828582666"};
     String[] subprefeiturasCentro = {"Sé","Pinheiros", "Butantã", "Lapa"};
     String[] populaçãoSubprefeituras = {"População: 431.106","População: 289.743","População: 428.217","População: 305.526",};
-    String[] orçamentoSubprefeiturasCentro = {"75415513","39642122", "48933915", "38321505"};
+    String[] areaSub = {"Área: 26,2 Km²","Área: 31,7 Km²","Área: 56,1 Km²","Área: 40,1 Km²"};
+    double[] orçamentoSubprefeiturasCentro = {75415513.00,39642122.00, 48933915.00, 38321505.00};
     String[] subprefeiturasOeste = {"Pinheiros", "Butantã", "Lapa"};
-    String[] orçamentoSubprefeiturasOeste = {"39642122", "48933915", "38321505"};
+    int[] orçamentoSubprefeiturasOeste = {39642122, 48933915, 38321505};
 
-    int[] iconesSub = {R.drawable.iconese,R.drawable.iconetomie,R.drawable.butanta,R.drawable.iconelapa,};
+    int[] iconesSub = {R.drawable.subse,R.drawable.subpinheiros,R.drawable.subutanta,R.drawable.sublapa,};
 
 
 }

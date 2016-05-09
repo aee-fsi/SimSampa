@@ -9,10 +9,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".SegundaTela"
-            android:label="@string/title_activity_segunda_tela"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".TelaPrincipal"
             android:label="@string/title_activity_tela_principal"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -29,10 +25,14 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".ListaSubprefeituras"
             android:label="@string/title_activity_lista_subprefeituras"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Subprefeitura"
+            android:label="@string/title_activity_subprefeitura"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

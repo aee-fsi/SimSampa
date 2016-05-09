@@ -40,6 +40,7 @@ public class AdaptadorCustom extends ArrayAdapter{
             handler.imageView4 = (ImageView)row.findViewById(R.id.imageView4);
             handler.nomeSub = (TextView)row.findViewById(R.id.nomeSub);
             handler.popSub = (TextView)row.findViewById(R.id.popSub);
+            handler.areaSub = (TextView)row.findViewById(R.id.areaSub);
             row.setTag(handler);
         }else {
             handler = (DataHandler)row.getTag();
@@ -50,6 +51,7 @@ public class AdaptadorCustom extends ArrayAdapter{
         handler.imageView4.setImageResource(dataProvider.getIcone());
         handler.nomeSub.setText(dataProvider.getNome());
         handler.popSub.setText(dataProvider.getPopulacao());
+        handler.areaSub.setText(dataProvider.getArea());
 
     return row;
     }
@@ -62,5 +64,6 @@ public class AdaptadorCustom extends ArrayAdapter{
         ImageView imageView4;
         TextView nomeSub;
         TextView popSub;
+        TextView areaSub;
     }
 }

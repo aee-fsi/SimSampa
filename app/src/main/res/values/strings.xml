@@ -5,4 +5,5 @@
     <string name="title_activity_tela_principal">Tela Principal</string>
     <string name="title_activity_inicializacao">Inicializacao</string>
     <string name="title_activity_lista_subprefeituras">Lista Subprefeituras</string>
+    <string name="title_activity_subprefeitura">Subprefeitura</string>
 </resources>

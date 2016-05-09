@@ -4,20 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#d4aeb7d8"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.hfad.simsampa.ListaSubprefeituras"
-    tools:showIn="@layout/activity_lista_subprefeituras"
-    android:background="#2dfaf0">
+    tools:showIn="@layout/activity_lista_subprefeituras">
 
     <ListView
+        android:id="@+id/listaSubprefeituras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/listaSubprefeituras"
+        android:background="#d4aeb7d8"
         android:headerDividersEnabled="true"
-        android:background="#2dfaf0"
+        android:longClickable="false"
         tools:listitem="@layout/minha_celula" />
 </RelativeLayout>
