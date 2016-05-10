@@ -12,84 +12,169 @@
     tools:context="com.hfad.simsampa.Subprefeitura"
     tools:showIn="@layout/activity_subprefeitura">
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+
+
+            <TextView
+                android:id="@+id/nomeSubprefeitura"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+            <TextView
+                android:id="@+id/textViewServico1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Centrais de Atendimento ao Cidadão"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <SeekBar
+                    android:id="@+id/seekBar"
+                    android:layout_width="0dp"
+                    android:layout_weight=".70"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/textViewSeekBar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".30"
+                    android:text="$: "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewServico2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manutenção dos sistemas de drenagem"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <SeekBar
+                    android:id="@+id/seekBar2"
+                    android:layout_width="0dp"
+                    android:layout_weight=".70"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textViewSeekBar2"
+                    android:layout_width="0dp"
+                    android:layout_weight=".30"
+                    android:layout_height="wrap_content"
+                    android:text="$: "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textViewServico3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pavimentação, Recapeamento de Vias."
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+              <SeekBar
+                android:id="@+id/seekBar3"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/textViewSeekBar3"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:text="$: "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewServico4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Administração da Unidade"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content">
+            <SeekBar
+                android:id="@+id/seekBar4"
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:id="@+id/textViewSeekBar4"
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:text="Investir: "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/casinhas"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewValorDisponivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disponível:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:orientation="vertical">
+        android:layout_alignParentStart="true" />
 
-        <TextView
-            android:id="@+id/nomeSubprefeitura"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:text="Large Text"
-            android:textAppearance="?android:attr/textAppearanceLarge" />
+    <TextView
+        android:id="@+id/textViewValorInvestido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Investido: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginRight="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_alignTop="@+id/textViewValorDisponivel"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Manutenção dos sistemas de drenagem"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirma"
+        android:id="@+id/buttonConfirma"
+        android:layout_above="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:onClick="confirmaBotao"/>
 
-        <SeekBar
-            android:id="@+id/seekBar"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:max="2000"
-            android:progress="1000"
-
-            android:thumb="@drawable/ic_attach_money_black_24dp"
-            />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Centrais de Atendimento ao Cidadão"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <SeekBar
-            android:id="@+id/seekBar2"
-            android:layout_width="match_parent"
-            android:layout_height="40dp" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Pavimentação, Recapeamento de Vias."
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <SeekBar
-            android:id="@+id/seekBar3"
-            android:layout_width="match_parent"
-            android:layout_height="40dp" />
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Administração da Unidade"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
-
-        <SeekBar
-            android:id="@+id/seekBar4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal" />
-
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/casinhas" />
 
 </RelativeLayout>
+

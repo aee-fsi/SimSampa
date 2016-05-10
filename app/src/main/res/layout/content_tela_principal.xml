@@ -11,21 +11,83 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:onClick="clicaTela"
     tools:context="com.hfad.simsampa.TelaPrincipal"
-    tools:showIn="@layout/activity_tela_principal">
-
+    tools:showIn="@layout/activity_tela_principal"
+    android:background="@drawable/mapa">
+    <!-->
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:src="@drawable/mapa"
         android:id="@+id/imageView3" />
+        <!-->
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignBottom="@+id/imageView3">
+        android:weightSum="1">
+
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="433dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.95" />
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.13">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.41" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Nível 1"
+                android:id="@+id/textViewPontuacaoTitulo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Pontos/Experiência"
+                android:id="@+id/textViewPontuacaoExperiencia"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Turno 1"
+                android:id="@+id/textViewPontuacaoTurno"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Verba"
+                android:id="@+id/textViewPontuacaoVerba"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.93" />
+
+
+
+        </LinearLayout>
+
+
 
     </LinearLayout>
+
+
 
     <Button
         style="?android:attr/buttonStyleSmall"

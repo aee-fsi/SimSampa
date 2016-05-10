@@ -19,4 +19,5 @@ public class Dados extends AppCompatActivity{
     int[] iconesSub = {R.drawable.subse,R.drawable.subpinheiros,R.drawable.subutanta,R.drawable.sublapa,};
 
 
+
 }

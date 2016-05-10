@@ -18,7 +18,7 @@ public class Inicializacao extends AppCompatActivity implements Runnable {
 
 
         Handler handler = new Handler();
-        handler.postDelayed(this, 2000);
+        handler.postDelayed(this, 2040);
 
     }
 

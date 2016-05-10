@@ -13,7 +13,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class ListaSubprefeituras extends AppCompatActivity {
+public class
+ListaSubprefeituras extends AppCompatActivity {
 
     ListView subprefeituras;
     Dados sub = new Dados();
@@ -59,7 +60,7 @@ public class ListaSubprefeituras extends AppCompatActivity {
                 objetoIntent.putExtra("nomeSubprefeitura", sub.subprefeiturasCentro[position]);
 
                 startActivity(objetoIntent);
-                finish();
+                getParent();
 
             }
         });
