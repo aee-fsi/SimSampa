@@ -12,76 +12,82 @@
     android:onClick="clicaTela"
     tools:context="com.hfad.simsampa.TelaPrincipal"
     tools:showIn="@layout/activity_tela_principal"
-    android:background="@drawable/mapa">
+    android:background="#fff">
     <!-->
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="500dp"
-        android:src="@drawable/mapa"
-        android:id="@+id/imageView3" />
-        <!-->
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:src="@drawable/mapa"
+    android:id="@+id/imageView3" />
+    <!-->
+
+
+<ImageView
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:src="@drawable/mapa"
+android:id="@+id/imageView3" />
+
+
+
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="433dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.95" />
+
+
 
     <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:weightSum="1">
-
+        android:layout_gravity="center_vertical"
+        android:layout_weight="0.13">
 
         <Space
-            android:layout_width="wrap_content"
-            android:layout_height="433dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_weight="0.95" />
+            android:layout_weight="1.41" />
 
-
-
-        <LinearLayout
-            android:orientation="vertical"
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Nível 1"
+            android:id="@+id/textViewPontuacaoTitulo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Pontos/Experiência"
+            android:id="@+id/textViewPontuacaoExperiencia"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Turno 1"
+            android:id="@+id/textViewPontuacaoTurno"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Verba"
+            android:id="@+id/textViewPontuacaoVerba"
             android:layout_gravity="center_vertical"
-            android:layout_weight="0.13">
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="1.41" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Nível 1"
-                android:id="@+id/textViewPontuacaoTitulo" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Pontos/Experiência"
-                android:id="@+id/textViewPontuacaoExperiencia"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Turno 1"
-                android:id="@+id/textViewPontuacaoTurno"
-                />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Verba"
-                android:id="@+id/textViewPontuacaoVerba"
-                android:layout_gravity="center_vertical"
-                android:layout_weight="0.93" />
-
-
-
-        </LinearLayout>
+            android:layout_weight="0.93" />
 
 
 
@@ -89,64 +95,68 @@
 
 
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button5"
-        android:background="@drawable/ic_directions_bus_black_24dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+</LinearLayout>
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button7"
-        android:background="@drawable/ic_rate_review_black_24dp"
-        android:layout_above="@+id/button5"
-        android:layout_alignParentRight="true" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button4"
-        android:background="@drawable/ic_import_contacts_black_24dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/button5"
-        android:layout_toStartOf="@+id/button5" />
 
-    <Button
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_poll_black_24dp"
-        android:id="@+id/button6"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+<Button
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/button5"
+    android:background="@drawable/ic_directions_bus_black_24dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/botaosubprefeituras"
-        android:onClick="clicouBotaoSub"
-        android:src="@drawable/ic_local_atm_black_24dp"
-        android:layout_alignTop="@+id/button4"
-        android:layout_toLeftOf="@+id/button4"
-        android:layout_toStartOf="@+id/button4" />
+<Button
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/button7"
+    android:background="@drawable/ic_rate_review_black_24dp"
+    android:layout_above="@+id/button5"
+    android:layout_alignParentRight="true" />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/turno"
-        android:src="@drawable/ic_hourglass_empty_black_24dp"
-        android:background="#f92b2b"
-        android:adjustViewBounds="false"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+<Button
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/button4"
+    android:background="@drawable/ic_import_contacts_black_24dp"
+    android:layout_alignParentBottom="true"
+    android:layout_toLeftOf="@+id/button5"
+    android:layout_toStartOf="@+id/button5" />
+
+<Button
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_poll_black_24dp"
+    android:id="@+id/button6"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/botaosubprefeituras"
+    android:onClick="clicouBotaoSub"
+    android:src="@drawable/ic_local_atm_black_24dp"
+    android:layout_alignTop="@+id/button4"
+    android:layout_toLeftOf="@+id/button4"
+    android:layout_toStartOf="@+id/button4" />
+
+<ImageButton
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/turno"
+    android:src="@drawable/ic_hourglass_empty_black_24dp"
+    android:background="#f92b2b"
+    android:adjustViewBounds="false"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
 
 </RelativeLayout>
