@@ -20,11 +20,11 @@
             android:id="@+id/linearLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
 
 
 
@@ -48,8 +48,8 @@
                 <SeekBar
                     android:id="@+id/seekBar"
                     android:layout_width="0dp"
-                    android:layout_weight=".70"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".70" />
                 <TextView
                     android:id="@+id/textViewSeekBar"
                     android:layout_width="0dp"
@@ -71,13 +71,13 @@
                 <SeekBar
                     android:id="@+id/seekBar2"
                     android:layout_width="0dp"
-                    android:layout_weight=".70"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".70" />
                 <TextView
                     android:id="@+id/textViewSeekBar2"
                     android:layout_width="0dp"
-                    android:layout_weight=".30"
                     android:layout_height="wrap_content"
+                    android:layout_weight=".30"
                     android:text="$: "
                     android:textAppearance="?android:attr/textAppearanceMedium" />
             </LinearLayout>
@@ -95,13 +95,13 @@
               <SeekBar
                 android:id="@+id/seekBar3"
                 android:layout_width="0dp"
-                android:layout_weight="0.7"
-                android:layout_height="wrap_content" />
+                  android:layout_height="wrap_content"
+                  android:layout_weight="0.7" />
             <TextView
                 android:id="@+id/textViewSeekBar3"
                 android:layout_width="0dp"
-                android:layout_weight="0.3"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.3"
                 android:text="$: "
                 android:textAppearance="?android:attr/textAppearanceMedium" />
             </LinearLayout>
@@ -119,14 +119,14 @@
             <SeekBar
                 android:id="@+id/seekBar4"
                 android:layout_width="0dp"
-                android:layout_weight="0.7"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal" />
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.7" />
             <TextView
                 android:id="@+id/textViewSeekBar4"
                 android:layout_width="0dp"
-                android:layout_weight="0.3"
                 android:layout_height="wrap_content"
+                android:layout_weight="0.3"
                 android:text="Investir: "
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </LinearLayout>
@@ -138,42 +138,42 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:src="@drawable/casinhas"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:src="@drawable/casinhas" />
 
     <TextView
         android:id="@+id/textViewValorDisponivel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Disponível:"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="Disponível:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/textViewValorInvestido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Investido: "
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_marginRight="68dp"
-        android:layout_marginEnd="68dp"
-        android:layout_alignTop="@+id/textViewValorDisponivel"
+        android:layout_alignEnd="@+id/linearLayout"
         android:layout_alignRight="@+id/linearLayout"
-        android:layout_alignEnd="@+id/linearLayout" />
+        android:layout_alignTop="@+id/textViewValorDisponivel"
+        android:layout_marginEnd="68dp"
+        android:layout_marginRight="68dp"
+        android:text="Investido: "
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
+        android:id="@+id/buttonConfirma"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Confirma"
-        android:id="@+id/buttonConfirma"
-        android:layout_above="@+id/imageView"
+        android:layout_below="@+id/textViewValorInvestido"
         android:layout_centerHorizontal="true"
-        android:onClick="confirmaBotao"/>
+        android:onClick="confirmaBotao"
+        android:text="Confirma" />
 
 
 </RelativeLayout>
