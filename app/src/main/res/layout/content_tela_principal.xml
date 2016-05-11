@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
+    android:onClick="clicaTela"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    android:onClick="clicaTela"
     tools:context="com.hfad.simsampa.TelaPrincipal"
-    tools:showIn="@layout/activity_tela_principal"
-    android:background="#fff">
+    tools:showIn="@layout/activity_tela_principal">
     <!-->
     <ImageView
     android:layout_width="match_parent"
@@ -23,18 +23,18 @@
 
 
 <ImageView
+    android:id="@+id/imageView3"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-android:src="@drawable/mapa"
-android:id="@+id/imageView3" />
+    android:src="@drawable/mapa" />
 
 
 
 
 <LinearLayout
-    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
     android:weightSum="1">
 
 
@@ -47,11 +47,11 @@ android:id="@+id/imageView3" />
 
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical"
-        android:layout_weight="0.13">
+        android:layout_weight="0.13"
+        android:orientation="vertical">
 
         <Space
             android:layout_width="match_parent"
@@ -60,34 +60,34 @@ android:id="@+id/imageView3" />
             android:layout_weight="1.41" />
 
         <TextView
+            android:id="@+id/textViewPontuacaoTitulo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="Nível 1"
-            android:id="@+id/textViewPontuacaoTitulo" />
+            android:textAppearance="?android:attr/textAppearanceLarge" />
         <TextView
+            android:id="@+id/textViewPontuacaoPopularidade"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Pontos/Experiência"
-            android:id="@+id/textViewPontuacaoExperiencia"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             />
         <TextView
+            android:id="@+id/textViewPontuacaoTurno"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Turno 1"
-            android:id="@+id/textViewPontuacaoTurno"
+            android:textAppearance="?android:attr/textAppearanceMedium"
             />
 
         <TextView
+            android:id="@+id/textViewPontuacaoVerba"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="Verba"
-            android:id="@+id/textViewPontuacaoVerba"
             android:layout_gravity="center_vertical"
-            android:layout_weight="0.93" />
+            android:layout_weight="0.93"
+            android:text="Verba"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
 
 
 
@@ -100,63 +100,63 @@ android:id="@+id/imageView3" />
 
 
 <Button
-    style="?android:attr/buttonStyleSmall"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
     android:id="@+id/button5"
-    android:background="@drawable/ic_directions_bus_black_24dp"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true"
     android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true" />
+    android:background="@drawable/ic_directions_bus_black_24dp" />
 
 <Button
-    style="?android:attr/buttonStyleSmall"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
     android:id="@+id/button7"
-    android:background="@drawable/ic_rate_review_black_24dp"
-    android:layout_above="@+id/button5"
-    android:layout_alignParentRight="true" />
-
-<Button
     style="?android:attr/buttonStyleSmall"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:layout_above="@+id/button5"
+    android:layout_alignParentRight="true"
+    android:background="@drawable/ic_rate_review_black_24dp" />
+
+<Button
     android:id="@+id/button4"
-    android:background="@drawable/ic_import_contacts_black_24dp"
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:layout_alignParentBottom="true"
     android:layout_toLeftOf="@+id/button5"
-    android:layout_toStartOf="@+id/button5" />
+    android:layout_toStartOf="@+id/button5"
+    android:background="@drawable/ic_import_contacts_black_24dp" />
 
 <Button
+    android:id="@+id/button6"
     style="?android:attr/buttonStyleSmall"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/ic_poll_black_24dp"
-    android:id="@+id/button6"
-    android:layout_alignParentTop="true"
+    android:layout_alignParentEnd="true"
     android:layout_alignParentRight="true"
-    android:layout_alignParentEnd="true" />
+    android:layout_alignParentTop="true"
+    android:background="@drawable/ic_poll_black_24dp" />
 
 <ImageButton
+    android:id="@+id/botaosubprefeituras"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:id="@+id/botaosubprefeituras"
-    android:onClick="clicouBotaoSub"
-    android:src="@drawable/ic_local_atm_black_24dp"
     android:layout_alignTop="@+id/button4"
     android:layout_toLeftOf="@+id/button4"
-    android:layout_toStartOf="@+id/button4" />
+    android:layout_toStartOf="@+id/button4"
+    android:onClick="clicouBotaoSub"
+    android:src="@drawable/ic_local_atm_black_24dp" />
 
 <ImageButton
+    android:id="@+id/turno"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:id="@+id/turno"
-    android:src="@drawable/ic_hourglass_empty_black_24dp"
-    android:background="#f92b2b"
-    android:adjustViewBounds="false"
     android:layout_alignParentBottom="true"
     android:layout_alignParentLeft="true"
-    android:layout_alignParentStart="true" />
+    android:layout_alignParentStart="true"
+    android:adjustViewBounds="false"
+    android:background="#f92b2b"
+    android:src="@drawable/ic_hourglass_empty_black_24dp" />
 
 </RelativeLayout>

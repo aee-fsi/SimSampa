@@ -4,13 +4,10 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class TelaPrincipal extends AppCompatActivity {
 
@@ -22,6 +19,25 @@ public class TelaPrincipal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_principal);
         ImageButton subprefeituras = (ImageButton) findViewById(R.id.botaosubprefeituras);
+
+        Intent novoIntent = getIntent();
+        // Double verba = novoIntent.getDoubleExtra("orçamentoSubprefeiturasCentro", 0);
+        int verba = 2000000;
+        double popularidade = 0.6;
+        int nivel = 1;
+        int turno = 1;
+        String TituloNivel = ("Nível " + nivel);
+
+
+        TextView pontuacaotitulo = (TextView) findViewById(R.id.textViewPontuacaoTitulo);
+        TextView verbaTexto = (TextView) findViewById(R.id.textViewPontuacaoVerba);
+        TextView popularidadeTexto = (TextView) findViewById(R.id.textViewPontuacaoPopularidade);
+        TextView turnoTexto = (TextView) findViewById(R.id.textViewPontuacaoTurno);
+        pontuacaotitulo.setText(TituloNivel);
+        verbaTexto.setText("Verba: " + verba);
+        turnoTexto.setText("Turno: " + turno);
+        popularidadeTexto.setText("Popularidade: " + popularidade);
+
 
 
     }
